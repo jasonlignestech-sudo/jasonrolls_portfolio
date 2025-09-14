@@ -42,7 +42,7 @@ function App() {
               "https://x.com/adityasri_in"
             ],
             "jobTitle": "Software Engineer",
-            "description": "Portfolio website of Aditya Kumar Srivastava, Software Engineer. Projects, skills, experience, and contact information."
+            "description": "Portfolio website of Jason Anak Rolls, Full-stack developer. Projects, skills, experience, and contact information."
           }
         `}</script>
         {/* SEO: Robots meta tag */}
