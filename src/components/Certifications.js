@@ -33,7 +33,6 @@ const Certifications = () => {
               <h3 className="text-lg font-semibold">AWS Certified Developer - Associate</h3>
               <p className="text-sm text-muted-foreground">Issued By: Amazon Web Services</p>
               <p className="text-sm text-muted-foreground">September 2024 - September 2027</p>
-              <a href="https://www.credly.com/badges/7db7a116-798b-4143-b5d3-4bc650ccc019/linked_in_profile" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-primary font-medium">View Certificate</a>
             </div>
 
             {/* Back Side */}
@@ -51,7 +50,6 @@ const Certifications = () => {
               <h3 className="text-lg font-semibold">AWS Certified Cloud Practitioner</h3>
               <p className="text-sm text-muted-foreground">Issued By: Amazon Web Services</p>
               <p className="text-sm text-muted-foreground">May 2023 - September 2027</p>
-              <a href="https://www.credly.com/badges/ec72467a-91a3-4a89-9551-e2ad94ed9327/linked_in_profile" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-primary font-medium">View Certificate</a>
             </div>
 
             {/* Back Side */}
@@ -69,7 +67,6 @@ const Certifications = () => {
               <h3 className="text-lg font-semibold">GitHub Foundations</h3>
               <p className="text-sm text-muted-foreground">Issued By: GitHub</p>
               <p className="text-sm text-muted-foreground">May 2025 - March 2028</p>
-              <a href="https://www.credly.com/badges/20576d85-9b88-464f-acc6-ccfbaf247027/linked_in_profile" target="_blank" rel="noopener noreferrer" className="inline-block mt-3 text-primary font-medium">View Certificate</a>
             </div>
 
             {/* Back Side */}

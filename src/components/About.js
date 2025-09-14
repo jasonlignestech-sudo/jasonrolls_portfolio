@@ -186,7 +186,7 @@ const About = () => {
               whileTap={{ scale: 0.95 }}>
               <FaGithub />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href={profile.social.x}
               target="_blank"
               rel="noopener noreferrer"
@@ -195,7 +195,7 @@ const About = () => {
               whileHover={{ scale: 1.1, rotate: -5 }}
               whileTap={{ scale: 0.95 }}>
               <BsTwitterX />
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         </motion.div>
       </div>
