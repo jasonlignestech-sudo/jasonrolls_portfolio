@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+// import { BsTwitterX } from "react-icons/bs";
 
 import { ReactTyped } from 'react-typed';
 import jasonPic from '../Assets/jason-pic.jpeg';
