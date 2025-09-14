@@ -86,7 +86,7 @@ const Header = () => {
               <li><a className="block hover:text-primary" href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
               <li>
                 <a 
-                  href="/Jason-Anak-Rolls-FlowCV-Resume-20250905.pdf" 
+                  href="/Jason-Anak-Rolls-20250914.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex h-9 items-center rounded-md border border-border px-3 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
