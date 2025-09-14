@@ -1,6 +1,6 @@
-# Aditya Kumar Srivastava - Portfolio Website
+# Jason Anak Rolls - Portfolio Website
 
-This is a personal portfolio website of Aditya Kumar Srivastava built with React to showcase my experience, projects, skills, and certifications.
+This is a personal portfolio website of Jason Anak Rolls built with React to showcase my experience, projects, skills, and certifications.
 
 ## Features
 
@@ -23,8 +23,8 @@ This is a personal portfolio website of Aditya Kumar Srivastava built with React
 
 1. Clone the repository
    ```
-   git clone https://github.com/adityaSrivastava29/adityasrivastava29.github.io.git
-   cd adityasrivastava29.github.io
+   git clone https://github.com/jasonlignestech-sudo/jasonrolls_portfolio.git
+   cd first_portfolio
    ```
 
 2. Install dependencies
