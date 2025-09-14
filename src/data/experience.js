@@ -35,4 +35,16 @@ export const experience = [
       "Collaborated in Agile/Scrum teams, learning best practices for code reviews, Gitworkflows, and scalable deployments."
     ],
   },
+  {
+    title: "Junior Full Stack Developer",
+    company: "NextZen Minds, Singapore, Singapore",
+    period: "January 2016 - March 2018",
+    bullets: [
+      "Assisted in building Edtech SaaS applications with React + Redux on the frontend and Node.js + PostgreSQL on the backend.",
+      "Supported development of React Native mobile apps with offline-first capability, deployed on both iOS and Android.",
+      "Implemented role-based authentication with JWT/OAuth2 and integrated GraphQL APIs for scalable data access.",
+      "Contributed to microservice deployments using Docker + Kubernetes on GCP.",
+      "Collaborated with senior engineers to optimize system design and improve API performance.",  
+    ],
+  },
 ];
