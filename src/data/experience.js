@@ -1,8 +1,10 @@
 export const experience = [
   {
     title: "Software Engineer",
-    company: "Rocketech, San Francisco, CA",
+    company: "Rocketech",
+    location: "San Francisco, CA",
     period: "April 2022 – Present",
+    image: "/src/Assets/rocketech.png", // Placeholder image for Rocketech
     bullets: [
       "Designed and deployed Fintech trading platforms using Next.js + TypeScript frontend and Nest.js microservices backend.",
       "Implemented event-driven workflows on AWS (Lambda, SQS, DynamoDB, APIGateway) handling 1M+ daily transactions with sub-200ms response times.",
@@ -13,8 +15,10 @@ export const experience = [
   },
   {
     title: "Full Stack Engineer",
-    company: "Empat, San Francisco, CA",
+    company: "Empat",
+    location: "San Francisco, CA",
     period: "July 2020 - February 2022",
+    image: "/src/Assets/empat.png", // Placeholder image for Empat
     bullets: [
       "Built Healthtech SaaS applications with React (Next.js) + Express.js + MongoDB, ensuring HIPAA compliance for sensitive medical data.",
       "Engineered AI-powered symptom triage chatbot using Python (FastAPI) + OpenAI APIs, reducing patient response time by 0%.",
@@ -25,8 +29,10 @@ export const experience = [
   },
   {
     title: "Full Stack Developer",
-    company: "Vention, San Francisco, CA",
+    company: "Vention",
+    location: "San Francisco, CA",
     period: "April 2018 - June 2020",
+    image: "/src/Assets/vention.png", // Placeholder image for Vention
     bullets: [
       "Contributed to Fintech and Web3 projects, building Angular + Laravel applications with smart contract integrations.",
       "Optimized backend APIs with Laravel + MySQL, reducing average query response times by 30%.",
@@ -37,8 +43,10 @@ export const experience = [
   },
   {
     title: "Junior Full Stack Developer",
-    company: "NextZen Minds, Singapore, Singapore",
+    company: "NextZen Minds",
+    location: "Singapore, Singapore",
     period: "January 2016 - March 2018",
+    image: "/src/Assets/nextzen.jpg", // Using the actual NextZen image
     bullets: [
       "Assisted in building Edtech SaaS applications with React + Redux on the frontend and Node.js + PostgreSQL on the backend.",
       "Supported development of React Native mobile apps with offline-first capability, deployed on both iOS and Android.",

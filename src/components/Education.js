@@ -100,79 +100,82 @@ const Education = () => {
                     boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
                   }}
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                    <div className="flex items-center gap-3">
-                      {edu.logo && (
-                        <motion.div 
-                          className="w-12 h-12 rounded-lg overflow-hidden border border-border/50 bg-background flex-shrink-0"
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: index * 0.1 + 0.1 }}
-                          whileHover={{ scale: 1.05 }}
-                        >
-                          <img 
-                            src={edu.logo} 
-                            alt={`${edu.institution} logo`}
-                            className="w-full h-full object-contain p-1"
-                          />
-                        </motion.div>
-                      )}
-                      <div>
-                        <motion.h3 
-                          className="text-lg font-semibold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent"
-                          whileHover={{ scale: 1.02 }}
-                        >
-                          {edu.degree}
-                        </motion.h3>
-                        <motion.p 
-                          className="text-sm text-primary font-medium"
-                          whileHover={{ scale: 1.01 }}
-                        >
-                          {edu.institution}
-                        </motion.p>
-                      </div>
-                    </div>
-                    <motion.span 
-                      className="text-xs text-muted-foreground bg-gradient-to-r from-muted/30 to-muted/50 px-3 py-1 rounded-full border border-border/50"
-                      whileHover={{ scale: 1.05 }}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                    {/* Column 1 - Image */}
+                    <motion.div 
+                      className="w-full"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 + 0.1 }}
                     >
-                      {edu.period}
-                    </motion.span>
-                  </div>
-                  
-                  {edu.extra && (
-                    <motion.p 
-                      className="text-sm font-medium text-green-600 dark:text-green-400 mb-3"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
+                      <motion.div 
+                        className="relative w-full aspect-video rounded-lg border border-border/30 shadow-md overflow-hidden"
+                        whileHover={{ 
+                          scale: 1.02,
+                          boxShadow: "0 10px 25px rgba(0,0,0,0.15)"
+                        }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <motion.img
+                          src={edu.image}
+                          alt={`${edu.institution} image`}
+                          className="w-full h-full object-cover"
+                          whileHover={{ 
+                            scale: 1.05,
+                          }}
+                          transition={{ duration: 0.3 }}
+                        />
+                      </motion.div>
+                    </motion.div>
+
+                    {/* Column 2 - Degree and Institution */}
+                    <motion.div 
+                      className="w-full text-center md:text-left"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 + 0.2 }}
+                    >
+                      <motion.h3 
+                        className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent mb-2"
+                        whileHover={{ scale: 1.02 }}
+                      >
+                        {edu.degree}
+                      </motion.h3>
+                      
+                      <motion.span 
+                        className="text-lg sm:text-xl font-semibold bg-gradient-to-r from-primary to-green-500 bg-clip-text text-transparent"
+                        whileHover={{ scale: 1.01 }}
+                      >
+                        {edu.institution}
+                      </motion.span>
+                    </motion.div>
+
+                    {/* Column 3 - Location and Period */}
+                    <motion.div 
+                      className="w-full text-center md:text-right"
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.1 + 0.3 }}
                     >
-                      {edu.extra}
-                    </motion.p>
-                  )}
-                  
-                  {edu.highlights && (
-                    <ul className="space-y-2">
-                      {edu.highlights.map((highlight, highlightIndex) => (
-                        <motion.li 
-                          key={highlightIndex}
-                          className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2"
-                          initial={{ opacity: 0, x: -10 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: (index * 0.1) + (highlightIndex * 0.05) }}
+                      <div className="flex flex-col gap-2">
+                        <motion.div 
+                          className="text-base sm:text-lg font-semibold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent"
+                          whileHover={{ scale: 1.02 }}
                         >
-                          <motion.div 
-                            className="w-1.5 h-1.5 bg-gradient-to-r from-primary to-green-500 rounded-full mt-2 flex-shrink-0"
-                            whileHover={{ scale: 1.5 }}
-                          />
-                          <span>{highlight}</span>
-                        </motion.li>
-                      ))}
-                    </ul>
-                  )}
+                          📍 {edu.location}
+                        </motion.div>
+                        <motion.div 
+                          className="text-base sm:text-lg font-semibold bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent"
+                          whileHover={{ scale: 1.05 }}
+                        >
+                          ⏰ {edu.period}
+                        </motion.div>
+                      </div>
+                    </motion.div>
+                  </div>
                 </motion.div>
               </motion.div>
             ))}
